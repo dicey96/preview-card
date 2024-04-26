@@ -1,0 +1,88 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.Altogether{
+    display: flex;
+    margin:100px 300px;
+    
+}
+
+.sedans{
+    background: hsl(31, 77%, 52%);
+    height: 25rem;
+    width: 20rem;
+    padding: 2rem;
+}
+
+.suvs{
+    background:  hsl(184, 100%, 22%);
+    height: 25rem;
+    width: 20rem;
+    padding: 2rem;
+}
+.Luxury{
+    background: hsl(179, 100%, 13%);
+    height: 25rem;
+    width: 20rem;
+    padding: 2rem;
+
+}
+
+h1{
+    color: white;
+    margin-top: 1rem;
+}
+ p{
+    color:white;
+    margin-top: 1rem;
+    line-height: 30px;
+}
+.sedans_more,
+.suvs_more,
+.luxury_more{
+    border: none;
+    border-radius: 1rem;
+    background-color: white;
+    padding:0.5rem;
+    margin-top: 4rem;
+}
+
+.suvs_more{
+    color:aqua;
+}
+.sedans_more{
+    color:orange ;
+}
+.luxury_more{
+    color: green;
+}
+
+@media  (max-width:992px){
+    .Altogether{
+        display: flex;
+        flex-direction: column; 
+        margin:100px 300px;   
+    } 
+}
+
+@media (max-width:375px){
+    .Altogether{
+        display: flex;
+        flex-direction: column;    
+    }   
+    
+.sedans:hover{
+    background-color: red;
+}
+.sedans_more:hover{
+     background-color: aqua;
+     color:white;
+}
+
+
+}
